@@ -81,19 +81,6 @@ def calculate(input, output):
 			peakWidth = 1
 	o.close()
 
-calculate("A549_lenti_ratios.txt", "A549_lenti_peaks.txt")
-calculate("HCT116_lenti_ratios.txt", "HCT116_lenti_peaks.txt")
-calculate("HEK293T_lenti_ratios.txt", "HEK293T_lenti_peaks.txt")
-calculate("HEK293T_PB_ratios.txt", "HEK293T_PB_peaks.txt")
-calculate("HEK293T_combined_ratios.txt", "HEK293T_combined_peaks.txt")
-calculate("HeLa-JVM_lenti_ratios.txt", "HeLa-JVM_lenti_peaks.txt")
-calculate("HeLa-JVM_PB_ratios.txt", "HeLa-JVM_PB_peaks.txt")
-calculate("HeLa-JVM_combined_ratios.txt", "HeLa-JVM_combined_peaks.txt")
-calculate("HTR8_lenti_ratios.txt", "HTR8_lenti_peaks.txt")
-calculate("i3Neuron_lenti_ratios.txt", "i3Neuron_lenti_peaks.txt")
-calculate("iPSC_lenti_1_ratios.txt", "iPSC_lenti_1_peaks.txt")
-calculate("iPSC_lenti_2_ratios.txt", "iPSC_lenti_2_peaks.txt")
-calculate("iPSC_lenti_combined_ratios.txt", "iPSC_lenti_combined_peaks.txt")
-calculate("MCF7_lenti_ratios.txt", "MCF7_lenti_peaks.txt")
+calculate(sys.argv[1], sys.argv[2])
 sys.exit()
 
